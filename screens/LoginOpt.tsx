@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, Image, ImageStyle, StatusBar, SafeAreaView, Platform } from 'react-native'
 import React, { useEffect } from 'react'
 import styles, { vw } from '../assets/stylesheet'
-import { Helvetica19Bold, Nunito16Reg, Nunito18Reg, Nunito20Bold, Roboto20Med, SFproDisplay20Med } from '../assets/CustomText'
+import { Nunito16Reg, Nunito18Reg, Nunito20Bold, Roboto20Med, SFproDisplay20Med } from '../assets/CustomText'
 import { statusBarTransparency } from '../assets/component'
 import clrStyle from '../assets/componentStyleSheet'
 import { appleLogo, fbLogo, googleLogo } from '../assets/svgXml'
@@ -86,7 +86,7 @@ export default function LoginOpt() {
                                 // TODO: Facebook Sign In
                             }}
                             bgColor='rgba(24, 119, 242, 1)'
-                            FontElement={Helvetica19Bold}
+                            FontElement={Roboto20Med}
                             CustomStyle={[styles.marginBottom8vw]}
                             icon={fbLogo(vw(6), vw(6))}
                         />

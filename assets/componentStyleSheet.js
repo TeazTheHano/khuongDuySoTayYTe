@@ -4,10 +4,51 @@ import { vw, vh } from './stylesheet';
 const clrStyle = {
     white: '#FFFFFF',
     black: '#000000',
-    bgMain: 'rgba(47, 29, 104, 1)'
+
+    basepurple100: '#0a0836',
+
+    basewhite: '#ffffff',
+    basepurple80: '#6b6dab',
+    basepurple60: '#e3e4fd',
+    baseblack: '#000000',
+    basepurple40: '#ede2fd',
+    basepurple20: '#f6f5ff',
+    basegrey100: '#696969',
+    basered100: '#e13b4f',
+    baseblue100: '#5589e8',
+    basegrey80: '#9f9f9f',
+    baseorange100: '#db6e48',
+    baseorange60: '#f0b49d',
+    basered60: '#fae1e8',
+    baseblue60: '#e0ebfd',
+    basegrey60: '#d6d6d6',
+    basegrey40: '#f4f2f1',
+    baseorange: '#ff5f0f',
+
+    basegreen: '#28ec97',
+    basepink: '#c966d3',
+    baseblue: '#1743bc',
+    basepurple: '#bacdf8',
+    backgroundwhite: '#ffffff',
+    backgroundblack: '#000000',
+    backgroundorange: '#ff5f0f',
+
+    backgroundgreen: '#28ec97',
+    backgroundpink: '#c966d3',
+    backgroundblue: '#1743bc',
+    backgroundpurple: '#bacdf8',
+    contentwhite: '#ffffff',
+    contentblack: '#000000',
+    contentorange: '#ff5f0f',
+
+    contentgreen: '#28ec97',
+    contentpink: '#c966d3',
+    contentblue: '#1743bc',
+    contentpurple: '#bacdf8',
+    sizingcolor: '#ffffff',
 
 }
-export default clrStyle;
+export default clrStyle
 
 export const NGHIACOLOR = {
     // Brand 

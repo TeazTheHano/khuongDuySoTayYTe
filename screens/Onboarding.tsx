@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Animated, Easing } from 'react-native'
+import { View, Text, TouchableOpacity, Animated, Easing, Image, ImageStyle } from 'react-native'
 import React, { useEffect, useRef } from 'react'
 import { SSBar, ViewCol, ViewColBetweenCenter, ViewColCenter, ViewRow, ViewRowBetweenCenter, ViewRowCenter } from '../assets/Class'
 import * as  SVG from '../assets/svgXml'
@@ -33,31 +33,31 @@ export default function Onboarding() {
   const onboard = [
     {
       animation: useRef(new Animated.Value(0)).current,
-      svg: SVG.onboarding0,
+      img: require('../assets/photos/b1.png'),
       title: `Quản lý sức khỏe gia đình`,
       description: `Theo dõi và lưu trữ hồ sơ sức khỏe cho cả gia đình – từ ông bà đến con nhỏ, tất cả trong một ứng dụng.`,
     },
     {
       animation: useRef(new Animated.Value(0)).current,
-      svg: SVG.onboarding1,
+      img: require('../assets/photos/b2.png'),
       title: `Sổ theo dõi tiêm chủng toàn diện`,
       description: `Quản lý lịch tiêm chủng cho các thành viên trong gia đình, đảm bảo không bỏ lỡ bất kỳ mũi tiêm quan trọng nào`,
     },
     {
       animation: useRef(new Animated.Value(0)).current,
-      svg: SVG.onboarding2,
+      img: require('../assets/photos/b3.png'),
       title: `Địa điểm y tế gần bạn`,
       description: `Dễ dàng tra cứu bản đồ các cơ sở khám và tiêm chủng uy tín tại địa phương.`,
     },
     {
       animation: useRef(new Animated.Value(0)).current,
-      svg: SVG.onboarding3,
+      img: require('../assets/photos/b4.png'),
       title: `Tin tức sức khỏe cập nhật mỗi ngày`,
       description: `Đón nhận tin tức mới nhất về sức khỏe, cùng các chính sách tiêm chủng và phòng chống dịch bệnh.`,
     },
     {
       animation: useRef(new Animated.Value(0)).current,
-      svg: SVG.onboarding4,
+      img: require('../assets/photos/b5.png'),
       title: `Bắt đầu hành trình chăm sóc sức khỏe gia đình`,
       description: ``,
     },
@@ -71,30 +71,29 @@ export default function Onboarding() {
   );
 
   useEffect(() => {
-    if (step === 4) {
-      getUser().then((res) => {
-        if (res && res.name) navigation.navigate('BottomTab' as never);
-        else navigation.navigate('LoginOpt' as never);
-      });
+    if (step === 5) {
+      navigation.navigate('LoginOpt' as never);
     }
 
-    Animated.timing(onboard[step].animation, {
-      toValue: 1,
-      duration: 200,
-      useNativeDriver: false,
-      easing: Easing.inOut(Easing.ease),
-    }).start();
+    if (onboard[step]?.animation) {
+      Animated.timing(onboard[step].animation, {
+        toValue: 1,
+        duration: 200,
+        useNativeDriver: false,
+        easing: Easing.inOut(Easing.ease),
+      }).start();
 
-    onboard
-      .filter((item, index) => index !== step)
-      .forEach((item) =>
-        Animated.timing(item.animation, {
-          toValue: 0,
-          duration: 200,
-          useNativeDriver: false,
-          easing: Easing.inOut(Easing.ease),
-        }).start()
-      );
+      onboard
+        .filter((item, index) => index !== step)
+        .forEach((item) =>
+          Animated.timing(item.animation, {
+            toValue: 0,
+            duration: 200,
+            useNativeDriver: false,
+            easing: Easing.inOut(Easing.ease),
+          }).start()
+        );
+    }
   }, [step]);
 
 
@@ -105,10 +104,10 @@ export default function Onboarding() {
         {step < 4 ?
           <TouchableOpacity
             onPress={() => setStep(onboard.length)}
-            style={[styles.positionAbsolute, styles.borderRadius10, styles.padding10, { backgroundColor: NGHIACOLOR.NghiaTransparentDark30, top: vw(15), right: vw(10) }]}
+            style={[styles.positionAbsolute, styles.zIndex1, styles.borderRadius10, styles.padding10, { backgroundColor: NGHIACOLOR.NghiaTransparentDark30, top: vw(15), right: vw(10) }]}
           ><Nunito14Reg color='white'>Skip</Nunito14Reg></TouchableOpacity>
           : null}
-        <Animated.View
+        {onboard[step]?.animation ? <Animated.View
           style={{
             opacity: onboard[step].animation.interpolate({
               inputRange: [0, 1],
@@ -121,17 +120,17 @@ export default function Onboarding() {
                   outputRange: [0.8, 1],
                 })
               },
-        
+
             ],
           }}
         >
-          {onboard[step].svg(vw(80), vw(80))}
-        </Animated.View>
+          <Image source={onboard[step]?.img} resizeMethod='resize' resizeMode='contain' style={[styles.w80vw] as ImageStyle} />
+        </Animated.View> : null}
       </ViewRowCenter>
       <ViewColBetweenCenter style={[styles.h50, styles.padding8vw, styles.gap4vw]}>
         <ViewCol style={[styles.gap4vw, styles.paddingV8vw]}>
-          <SVNHara color='white' style={[styles.textCenter, { fontSize: vw(8) }]}>{onboard[step].title as string}</SVNHara>
-          <Nunito18Med color='white' style={[styles.textCenter]}>{onboard[step].description as string}</Nunito18Med>
+          <SVNHara color='white' style={[styles.textCenter, { fontSize: vw(8) }]}>{onboard[step]?.title || '' as string}</SVNHara>
+          <Nunito18Med color='white' style={[styles.textCenter]}>{onboard[step]?.description || '' as string}</Nunito18Med>
         </ViewCol>
         <ViewRowBetweenCenter style={[styles.paddingBottom8vw, styles.w100]}>
           <ViewRow>

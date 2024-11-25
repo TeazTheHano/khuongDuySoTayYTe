@@ -850,3 +850,65 @@ export class BannerSliderWithCenter extends Component<{
         )
     }
 }
+
+export class InputCardVer1 extends Component<{
+    customStyle?: any
+    value: any
+    onChangeText: (input: any) => void
+    hideContent?: boolean,
+    hideContentFnc?: (value: boolean) => void,
+    textContentType?: string | undefined
+    title?: string
+    textClass1?: React.ComponentType<any>
+    textClass2?: React.ComponentType<any>
+    placeholder?: string
+    titleColor?: string
+    placeholderColor?: string
+    valueColor?: string
+    autoCapitalize?: 'none' | 'sentences' | 'words' | 'characters' | undefined
+    autoFocus?: boolean
+    returnKeyType?: ReturnKeyType
+    keyboardType?: KeyboardType
+    onSubmitEditing?: () => void
+    blurOnSubmit?: boolean
+    inputRef?: any
+}> {
+    render() {
+        const { customStyle, onChangeText, value, textClass1, textClass2, hideContent, hideContentFnc, textContentType, title, placeholder, titleColor, placeholderColor, valueColor, autoCapitalize } = this.props;
+        let type: string = textContentType ? textContentType : "none"
+        let TextClass1 = textClass1 ? textClass1 : Text
+        let TextClass2 = textClass2 ? textClass2 : Text
+        return (
+            <View
+                style={[styles.w100, styles.padding2vw, styles.flexRow, styles.alignItemsCenter, styles.borderRadius2vw, styles.marginBottom4vw, { borderWidth: 1, borderColor: 'rgba(0,0,0,1)' }, customStyle]} >
+                {title ?
+                    <TextClass1 style={[styles.paddingH4vw, { color: titleColor ? titleColor : clrStyle.black }]}>{title}:</TextClass1>
+                    : null}
+                <TextInput
+                    onChangeText={onChangeText}
+                    autoCapitalize={autoCapitalize ? autoCapitalize : 'none'}
+                    placeholder={placeholder ? placeholder : ''}
+                    placeholderTextColor={placeholderColor ? placeholderColor : clrStyle.grey2}
+                    secureTextEntry={hideContent ? hideContent : false}
+                    passwordRules={type === 'password' ? "minlength: 8; maxlength: 100" : ''}
+                    textContentType={type as "none"}
+                    maxLength={type === 'password' ? 100 : 100}
+                    style={[styles.flex1, styles.padding1vw,]}
+                    autoFocus={this.props.autoFocus}
+                    returnKeyType={this.props.returnKeyType ? this.props.returnKeyType : 'done'}
+                    keyboardType={this.props.keyboardType ? this.props.keyboardType : 'default'}
+                    onSubmitEditing={this.props.onSubmitEditing ? this.props.onSubmitEditing : () => { }}
+                    blurOnSubmit={this.props.blurOnSubmit ? this.props.blurOnSubmit : false}
+                    ref={this.props.inputRef ? this.props.inputRef : null}
+                ><TextClass2 style={[styles.flex1]}>{value}</TextClass2></TextInput>
+                {hideContentFnc ?
+                    <TouchableOpacity
+                        onPress={() => { hideContentFnc && hideContentFnc(!hideContent) }}
+                        style={[{ paddingRight: vw(2) }]}>
+                        {hideContent ? inVisibilityIcon(vw(6), vw(6)) : visibilityIcon(vw(6), vw(6))}
+                    </TouchableOpacity>
+                    : null}
+            </View>
+        )
+    }
+}
