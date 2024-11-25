@@ -1,118 +1,52 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+import { ProviderTotal } from './data/store';
+import clrStyle from './assets/componentStyleSheet';
+import { ColorValue } from 'react-native';
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+// screen import
+import Onboarding from './screens/Onboarding';
+import LoginOpt from './screens/LoginOpt';
+import Login from './screens/Login';
+import Register from './screens/Register';
+import DataCollect from './screens/DataCollect';
+import BottomTab from './assets/BottomTab';
+import Home from './screens/Home';
+import User from './screens/User';
+import Shop from './screens/Shop';
+import Community from './screens/Community';
+import ListView from './screens/ListView';
+// >>>>>>>>>>
 
+
+// ____________________END OF IMPORT_______________________
+
+const Stack = createNativeStackNavigator();
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
+    <ProviderTotal>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false, contentStyle: { backgroundColor: clrStyle.white as ColorValue } }}>
+          <Stack.Screen name="Onboarding" component={Onboarding} />
+          <Stack.Screen name="LoginOpt" component={LoginOpt} />
+          <Stack.Screen name="BottomTab" component={BottomTab} />
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name='Register' component={Register} />
+          <Stack.Screen name="DataCollect" component={DataCollect} />
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="User" component={User} />
+          <Stack.Screen name="Shop" component={Shop} />
+          <Stack.Screen name="Community" component={Community} />
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+          {/* >>>> */}
+          <Stack.Screen name="ListView" component={ListView} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ProviderTotal>
+  )
+}
 
 export default App;
