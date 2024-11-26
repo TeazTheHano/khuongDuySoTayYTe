@@ -1,4 +1,4 @@
-import { UserFormat } from "./interfaceFormat";
+import { UserFormat } from './interfaceFormat';
 
 export const vaccineInfo = [
   {
@@ -43,12 +43,14 @@ export const vaccineInfo = [
     name: `Rotavin`,
     from: `Việt Nam`,
     price: ` 490,000`,
-    sideEffect: ` Một số triệu chứng có thể gặp ở trẻ sau khi uống vắc xin đó là: tiêu chảy, nôn trớ, sốt, đau bụng, khóc, ho,… Có một lời khuyên cho phụ huynh đó là nên theo dõi sát sao tình trạng sức khỏe, các biểu hiện của con sau khi uống vắc xin.Đặc biệt, cha mẹ cần báo cho bác sĩ, cán bộ tiêm chủng khi con gặp các tác dụng phụ không mong muốn.
+    sideEffect: ` Một số triệu chứng có thể gặp ở trẻ sau khi uống vắc xin đó là: tiêu chảy, nôn trớ, sốt, đau bụng, khóc, ho,… Có một lời khuyên cho phụ hu,
+    yn:h đó là nên theo dõi sát sao tình trạng sức khỏe, các biểu hiện của con sau khi uống vắc xin.Đặc biệt, cha mẹ cần báo cho bác sĩ, cán bộ tiêm chủng khi con gặp các tác dụng phụ không mong muốn.
 `,
   },
   {
     protect: `Các bệnh do phế cầu`,
-    name: `Synflorix`,
+    name: `S,
+    yn:florix`,
     from: `Bỉ`,
     price: ` 1,045,000`,
     sideEffect: ` - Rất thường gặp (tỉ lệ ≥ 1/10): Chán ăn, chóng mặt, kích thích, đau, đỏ, sưng tại chỗ tiêm, sốt ≥ 380C (đo nhiệt độ hậu môn trẻ < 2 tuổi). - Thường gặp(tỉ lệ ≥ 1 / 100 và < 1 / 10): Chai cứng chỗ tiêm, sốt > 390C(đo nhiệt độ hậu môn trẻ < 2 tuổi), sốt ≥ 380C(đo nhiệt độ hậu môn trẻ 2 - 5 tuổi).- Không thường gặp(tỉ lệ ≥ 1 / 1000 và < 1 / 100): Quấy khóc bất thường, ngừng thở ở trẻ non tháng, tiêu chảy, nôn, u máu tại chỗ tiêm, chảy máu và nốt sưng nhỏ, sốt > 400C(đo nhiệt độ hậu môn trẻ < 2 tuổi), sốt > 390C(đo nhiệt độ hậu môn trẻ 2 - 5 tuổi).- Hiếm(tỉ lệ ≥ 1 / 10.000 và < 1 / 1000): Viêm da dị ứng, viêm da không điển hình, chàm, co giật do sốt và không do sốt, phát ban, mày đay, giảm trương lực – giảm đáp ứng.
@@ -169,7 +171,7 @@ export const vaccineInfo = [
     from: `Mỹ`,
     price: ` 996,000`,
     sideEffect: ` - Phản ứng tại vị trí tiêm: Sưng, đau nhức, có khối tụ máu, phát ban, ngứa, ban đỏ, nốt chai cứng; - Sốt cao;- Phát ban dạng thủy đậu tại vị trí tiêm hoặc toàn thân.Bên cạnh đó còn có những báo cáo về việc sau khi sử dụng vắc - xin nhưng những tác dụng phụ này chưa rõ hoặc chưa đủ bằng chứng liên quan đến sau tiêm vắc - xin như:
-- Toàn thân: Sốc phản vệ, phù mạch, phù ngoại biên, phù thần kinh mạch;- Rối loạn tiêu hóa: Buồn nôn và nôn ói;- Rối loạn mắt: Viêm võng mạc hoại tử(thường gặp ở những đối tượng bị suy giảm miễn dịch);- Phản ứng trên hệ máu và hệ bạch huyết: Thiếu máu bất sản, giảm tiểu cầu, bệnh hạch bạch huyết;- Nhiễm trùng và nhiễm ký sinh trùng: Mắc bệnh thủy đậu của chủng vắc - xin được tiêm;- Tác dụng phụ trên thần kinh / Tâm thần: Viêm não, viêm màng não vô khuẩn, tai biến mạch máu não, viêm tủy ngang, mất điều hòa, co giật, chóng mặt, hội chứng Guillain - Barré, liệt Bell, dị cảm, dễ bị kích thích;- Phản ứng trên hệ hô hấp: Viêm phổi;- Phản ứng trên da: Mắc hội chứng Stevens - Johnson, ban đỏ, ban xuất huyết Henoch - Schonlein, chốc lở, viêm mô tế bào, nhiễm khuẩn da và mô mềm thứ phát, Herpes zoster.Khi gặp những tác dụng phụ không mong muốn sau tiêm vắc - xin thủy đậu Varivax, cần ngay lập tức thông báo cho bác sĩ để được xử trí kịp thời.
+- Toàn thân: Sốc phản vệ, phù mạch, phù ngoại biên, phù thần kinh mạch;- Rối loạn tiêu hóa: Buồn nôn và nôn ói;- Rối loạn mắt: Viêm võng mạc hoại tử(thường gặp ở những đối tượng bị suy giảm miễn dịch);- Phản ứng trên hệ máu và hệ bạch huyết: Thiếu máu bất sản, giảm tiểu cầu, bệnh hạch bạch huyết;- Nhiễm trùng và nhiễm ký sinh trùng: Mắc bệnh thủy đậu của chủng vắc - xin được tiêm;- Tác dụng phụ trên thần kinh / Tâm thần: Viêm não, viêm màng não vô khuẩn, tai biến mạch máu não, viêm tủy ngang, mất điều hòa, co giật, chóng mặt, hội chứng Guillain - Barré, liệt Bell, dị cảm, dễ bị kích thích;- Phản ứng trên hệ hô hấp: Viêm phổi;- Phản ứng trên da: Mắc hội chứng Stevens - Johnson, ban đỏ, ban xuất huyết Henoch - Schonlein, chốc lở, viêm mô tế bào, nhiễm khuẩn da và mô mềm thứ phát, Herpes zoster.Khi gặp những tác dụng phụ không mong muốn sau tiêm vắc - xin thủy đậu Varivatrue, cần ngay lập tức thông báo cho bác sĩ để được xử trí kịp thời.
 `,
   },
   {
@@ -178,7 +180,7 @@ export const vaccineInfo = [
     from: `Bỉ`,
     price: ` 945,000`,
     sideEffect: ` - Phản ứng tại vị trí tiêm: Sưng, đau nhức, có khối tụ máu, phát ban, ngứa, ban đỏ, nốt chai cứng; - Sốt cao;- Phát ban dạng thủy đậu tại vị trí tiêm hoặc toàn thân.Bên cạnh đó còn có những báo cáo về việc sau khi sử dụng vắc - xin nhưng những tác dụng phụ này chưa rõ hoặc chưa đủ bằng chứng liên quan đến sau tiêm vắc - xin như:
-- Toàn thân: Sốc phản vệ, phù mạch, phù ngoại biên, phù thần kinh mạch;- Rối loạn tiêu hóa: Buồn nôn và nôn ói;- Rối loạn mắt: Viêm võng mạc hoại tử(thường gặp ở những đối tượng bị suy giảm miễn dịch);- Phản ứng trên hệ máu và hệ bạch huyết: Thiếu máu bất sản, giảm tiểu cầu, bệnh hạch bạch huyết;- Nhiễm trùng và nhiễm ký sinh trùng: Mắc bệnh thủy đậu của chủng vắc - xin được tiêm;- Tác dụng phụ trên thần kinh / Tâm thần: Viêm não, viêm màng não vô khuẩn, tai biến mạch máu não, viêm tủy ngang, mất điều hòa, co giật, chóng mặt, hội chứng Guillain - Barré, liệt Bell, dị cảm, dễ bị kích thích;- Phản ứng trên hệ hô hấp: Viêm phổi;- Phản ứng trên da: Mắc hội chứng Stevens - Johnson, ban đỏ, ban xuất huyết Henoch - Schonlein, chốc lở, viêm mô tế bào, nhiễm khuẩn da và mô mềm thứ phát, Herpes zoster.Khi gặp những tác dụng phụ không mong muốn sau tiêm vắc - xin thủy đậu Varivax, cần ngay lập tức thông báo cho bác sĩ để được xử trí kịp thời.
+- Toàn thân: Sốc phản vệ, phù mạch, phù ngoại biên, phù thần kinh mạch;- Rối loạn tiêu hóa: Buồn nôn và nôn ói;- Rối loạn mắt: Viêm võng mạc hoại tử(thường gặp ở những đối tượng bị suy giảm miễn dịch);- Phản ứng trên hệ máu và hệ bạch huyết: Thiếu máu bất sản, giảm tiểu cầu, bệnh hạch bạch huyết;- Nhiễm trùng và nhiễm ký sinh trùng: Mắc bệnh thủy đậu của chủng vắc - xin được tiêm;- Tác dụng phụ trên thần kinh / Tâm thần: Viêm não, viêm màng não vô khuẩn, tai biến mạch máu não, viêm tủy ngang, mất điều hòa, co giật, chóng mặt, hội chứng Guillain - Barré, liệt Bell, dị cảm, dễ bị kích thích;- Phản ứng trên hệ hô hấp: Viêm phổi;- Phản ứng trên da: Mắc hội chứng Stevens - Johnson, ban đỏ, ban xuất huyết Henoch - Schonlein, chốc lở, viêm mô tế bào, nhiễm khuẩn da và mô mềm thứ phát, Herpes zoster.Khi gặp những tác dụng phụ không mong muốn sau tiêm vắc - xin thủy đậu Varivatrue, cần ngay lập tức thông báo cho bác sĩ để được xử trí kịp thời.
 `,
   },
   {
@@ -268,7 +270,8 @@ export const vaccineInfo = [
     price: ` 495,000`,
     sideEffect: ` Tác dụng phụ:
  - Phản ứng tại chỗ tiêm: sưng, đau, đỏ da.- Phản ứng toàn thân: mệt mỏi, đau đầu, chóng mặt, có thể sốt, run rẩy, ngất.Có thể đau nhức xương khớp, đau cơ.Rối loạn dạ dày, ruột(cảm giác buồn nôn, đau bụng).- Trường hợp sốc phản vệ hiếm gặp nhưng vẫn có thể xảy ra.Đối tượng cần lưu ý:
-- Người bị dị ứng với neomycin.Không tiêm cùng vị trí hay chung bơm tiêm vắc - xin và immunoglobulin.- Không tiêm vắc - xin vào trong lòng mạch máu.- Phụ nữ có thai và cho con bú: nếu tiêm dự phòng trước phơi nhiễm thì nên trì hoãn lịch tiêm.Còn nếu tiêm sau phơi nhiễm với mục đích dự phòng thì đối tượng này không thuộc chống chỉ định vì bệnh dại có tiến triển nguy hiểm.- Cẩn trọng với những người bị giảm tiểu cầu(thrombocytopenia) hay rối loạn đông máu.
+- Người bị dị ứng với neomycin.Không tiêm cùng vị trí hay chung bơm tiêm vắc - xin và immunoglobulin.- Không tiêm vắc - xin vào trong lòng mạch máu.- Phụ nữ có thai và cho con bú: nếu tiêm dự phòng trước phơi nhiễm thì nên trì hoãn lịch tiêm.Còn nếu tiêm sau phơi nhiễm với mục đích dự phòng thì đối tượng này không thuộc chống chỉ định vì bệnh dại có tiến triển nguy hiểm.- Cẩn trọng với những người bị giảm tiểu cầu(thromboc,
+yt:openia) hay rối loạn đông máu.
 `,
   },
   {
@@ -278,7 +281,8 @@ export const vaccineInfo = [
     price: ` 370,000`,
     sideEffect: ` Tác dụng phụ:
  - Phản ứng tại chỗ tiêm: sưng, đau, đỏ da.- Phản ứng toàn thân: mệt mỏi, đau đầu, chóng mặt, có thể sốt, run rẩy, ngất.Có thể đau nhức xương khớp, đau cơ.Rối loạn dạ dày, ruột(cảm giác buồn nôn, đau bụng).- Trường hợp sốc phản vệ hiếm gặp nhưng vẫn có thể xảy ra.Đối tượng cần lưu ý:
-- Người bị dị ứng với neomycin.Không tiêm cùng vị trí hay chung bơm tiêm vắc - xin và immunoglobulin.- Không tiêm vắc - xin vào trong lòng mạch máu.- Phụ nữ có thai và cho con bú: nếu tiêm dự phòng trước phơi nhiễm thì nên trì hoãn lịch tiêm.Còn nếu tiêm sau phơi nhiễm với mục đích dự phòng thì đối tượng này không thuộc chống chỉ định vì bệnh dại có tiến triển nguy hiểm.- Cẩn trọng với những người bị giảm tiểu cầu(thrombocytopenia) hay rối loạn đông máu.
+- Người bị dị ứng với neomycin.Không tiêm cùng vị trí hay chung bơm tiêm vắc - xin và immunoglobulin.- Không tiêm vắc - xin vào trong lòng mạch máu.- Phụ nữ có thai và cho con bú: nếu tiêm dự phòng trước phơi nhiễm thì nên trì hoãn lịch tiêm.Còn nếu tiêm sau phơi nhiễm với mục đích dự phòng thì đối tượng này không thuộc chống chỉ định vì bệnh dại có tiến triển nguy hiểm.- Cẩn trọng với những người bị giảm tiểu cầu(thromboc,
+yt:openia) hay rối loạn đông máu.
 `,
   },
   {
@@ -388,32 +392,645 @@ export const vaccineInfo = [
 
 export const demoUser: UserFormat[] = [
   {
-    name: "Nguyen Van A",
-    address: "Hai Chau, Da Nang",
+    name: 'Nguyen Van A',
+    address: 'Hai Chau, Da Nang',
     vaccineShots: [
       {
-        name: "Pentaxim",
+        name: 'Pentaxim',
         detail: [
-          { time: new Date('2022-01-01'), place: "Hai Chau, Da Nang" },
-          { time: new Date('2022-02-01'), place: "Hai Chau, Da Nang" },
-          { time: new Date('2022-03-01'), place: "Hai Chau, Da Nang" },
+          { time: new Date('2022-01-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-03-01'), place: 'Hai Chau, Da Nang' },
         ],
         nextShot: new Date('2022-04-01'),
-      }
-    ]
+      },
+    ],
   },
   {
-    name: "Nguyen Van B",
-    address: "Hai Chau, Da Nang",
+    name: 'Nguyen Van B',
+    address: 'Hai Chau, Da Nang',
     vaccineShots: [
       {
-        name: "Pentaxim",
+        name: 'Pentaxim',
         detail: [
-          { time: new Date('2022-01-01'), place: "Hai Chau, Da Nang" },
-          { time: new Date('2022-02-01'), place: "Hai Chau, Da Nang" },
+          { time: new Date('2022-01-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
         ],
-      }
-    ]
-  }
+      },
+    ],
+  },
+];
 
+export const adultVaccineTime = [
+  {
+    name: `Cúm`,
+    F9T11: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F12T15: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F16T18: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F19T26: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F27T45: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F46T55: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F56T64: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.`,
+    F65T: `Tiêm 1 liều và tiêm nhắc lại mỗi năm 1 lần.
+`,
+  },
+  {
+    name: `Viêm phổi do phế cầu khuẩn`,
+    F9T11: `Tiêm 1 liều duy nhất.`,
+    F12T15: `Tiêm 1 liều duy nhất.`,
+    F16T18: `Tiêm 1 liều duy nhất.`,
+    F19T26: `Tiêm 1 liều duy nhất.`,
+    F27T45: `Tiêm 1 liều duy nhất.`,
+    F46T55: `Tiêm 1 liều duy nhất.`,
+    F56T64: `Tiêm 1 liều duy nhất.`,
+    F65T: `Tiêm 1 liều duy nhất.
+`,
+  },
+  {
+    name: `Sởi - Quai bị - Rubella`,
+    F9T11: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F12T15: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F16T18: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F19T26: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F27T45: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F46T55: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F56T64: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F65T: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.
+`,
+  },
+  {
+    name: `Thủy đậu`,
+    F9T11: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F12T15: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F16T18: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F19T26: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F27T45: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F46T55: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F56T64: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.`,
+    F65T: `Tiêm 2 liều cách nhau tối thiểu 1 tháng.Phụ nữ nên hoàn tất lịch tiêm trước khi mang thai tối thiểu 3 tháng.
+`,
+  },
+  {
+    name: `Uốn ván`,
+    F9T11: `"Phụ nữ trong độ tuổi sinh đẻ:
+      - Liều 1: tiêm càng sớm càng tốt khi có thai lần đầu
+        - Liều 2: cách liều đầu tiên 1 thagns
+          - Liều 3: cách liều 2 tối thiểu 6 tháng hoặc trong thời kỳ có thai sau"`,
+    F12T15: `"Phụ nữ trong độ tuổi sinh đẻ:
+    - Liều 1: tiêm càng sớm càng tốt khi có thai lần đầu
+      - Liều 2: cách liều đầu tiên 1 thagns
+        - Liều 3: cách liều 2 tối thiểu 6 tháng hoặc trong thời kỳ có thai sau"`,
+    F16T18: `"Phụ nữ trong độ tuổi sinh đẻ:
+    - Liều 1: tiêm càng sớm càng tốt khi có thai lần đầu
+      - Liều 2: cách liều đầu tiên 1 thagns
+        - Liều 3: cách liều 2 tối thiểu 6 tháng hoặc trong thời kỳ có thai sau"`,
+    F19T26: `"Phụ nữ trong độ tuổi sinh đẻ:
+    - Liều 1: tiêm càng sớm càng tốt khi có thai lần đầu
+      - Liều 2: cách liều đầu tiên 1 thagns
+        - Liều 3: cách liều 2 tối thiểu 6 tháng hoặc trong thời kỳ có thai sau"`,
+    F27T45: `"Phụ nữ trong độ tuổi sinh đẻ:
+    - Liều 1: tiêm càng sớm càng tốt khi có thai lần đầu
+      - Liều 2: cách liều đầu tiên 1 thagns
+        - Liều 3: cách liều 2 tối thiểu 6 tháng hoặc trong thời kỳ có thai sau"`,
+    F46T55: `"Tiêm 3 liều.
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2:cách liều 1 tối thiểu 1 tháng
+        - Lần 3:cách liều 2 từ 6 tháng"`,
+    F56T64: `"Tiêm 3 liều.
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2:cách liều 1 tối thiểu 1 tháng
+        - Lần 3:cách liều 2 từ 6 tháng"`,
+    F65T: `"Tiêm 3 liều.
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2:cách liều 1 tối thiểu 1 tháng
+        - Lần 3:cách liều 2 từ 6 tháng"
+`,
+  },
+  {
+    name: `Bạch hầu - Uốn ván - Ho gà`,
+    F9T11: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F12T15: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F16T18: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F19T26: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F27T45: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F46T55: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F56T64: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)`,
+    F65T: `Tiềm 1 liều và nhắc lại mỗi 10 năm(đã hoàn thành lịch cơ bản)
+`,
+  },
+  {
+    name: `Viêm não Nhật Bản`,
+    F9T11: `Chưa từng tiêm vắc xin VNNB trước đó: Tiêm 2 liều cách nhau 1 năm`,
+    F12T15: `Chưa từng tiêm vắc xin VNNB trước đó: Tiêm 2 liều cách nhau 1 năm`,
+    F16T18: `Chưa từng tiêm vắc xin VNNB trước đó: Tiêm 2 liều cách nhau 1 năm`,
+    F19T26: `Tiêm 1 liều duy nhất.`,
+    F27T45: `Tiêm 1 liều duy nhất.`,
+    F46T55: `Tiêm 1 liều duy nhất.`,
+    F56T64: `Tiêm 1 liều duy nhất.`,
+    F65T: `Tiêm 1 liều duy nhất.
+`,
+  },
+  {
+    name: `Viêm màng não, nhiễm khuẩn huyết, viêm phổi do não mô cầu khuẩn A, C, Y, W - 135`,
+    F9T11: `Tiêm 1 liều duy nhất.`,
+    F12T15: `Tiêm 1 liều duy nhất.`,
+    F16T18: `Tiêm 1 liều duy nhất.`,
+    F19T26: `Tiêm 1 liều duy nhất.`,
+    F27T45: `Tiêm 1 liều duy nhất.`,
+    F46T55: `Tiêm 1 liều duy nhất.`,
+    F56T64: `Tiêm 1 liều duy nhất.`,
+    F65T: `Tiêm 1 liều duy nhất.
+`,
+  },
+  {
+    name: `Viêm màng não, nhiễm khuẩn huyết, viêm phổi do não mô cầu khuẩn B, C`,
+    F9T11: `"Tiêm 2 liều:
+      - Liều 1: lần tiêm đầu tiên
+        - Liều 2: cách liều đầu tiên 6 - 8 tuần"`,
+    F12T15: `"Tiêm 2 liều:
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2: cách liều đầu tiên 6 - 8 tuần"`,
+    F16T18: `"Tiêm 2 liều:
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2: cách liều đầu tiên 6 - 8 tuần"`,
+    F19T26: `"Tiêm 2 liều:
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2: cách liều đầu tiên 6 - 8 tuần"`,
+    F27T45: `"Tiêm 2 liều:
+    - Liều 1: lần tiêm đầu tiên
+      - Liều 2: cách liều đầu tiên 6 - 8 tuần"`,
+    F46T55: 0,
+    F56T64: 0,
+    F65T: 0,
+  },
+  {
+    name: `Viêm gan A`,
+    F9T11: `Tiêm 2 liều, cách nhau từ 6 - 12 tháng`,
+    F12T15: `Tiêm 2 liều, cách nhau từ 6 - 12 tháng`,
+    F16T18: `Tiêm 2 liều, cách nhau từ 6 - 12 tháng`,
+    F19T26: `Tiêm 2 liều, cách nhau từ 6 - 12 tháng`,
+    F27T45: 0,
+    F46T55: 0,
+    F56T64: 0,
+    F65T: 0,
+  },
+  {
+    name: `Viêm gan B`,
+    F9T11: `"Lịch tiêm 3 liều:
+      - Liều 1: lần đầu tiên tiêm
+        - Liều 2: 1 tháng sau liều 1
+          - Liều 3: 5 tháng sau liều 2"`,
+    F12T15: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"`,
+    F16T18: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"`,
+    F19T26: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"`,
+    F27T45: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"`,
+    F46T55: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"`,
+    F56T64: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"`,
+    F65T: `"Lịch tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 1
+        - Liều 3: 5 tháng sau liều 2"
+`,
+  },
+  {
+    name: `Viêm gan A + B`,
+    F9T11: `Tiêm 2 liều, cách nhau từ 6 - 12 tháng`,
+    F12T15: `Tiêm 2 liều, cách nhau từ 6 - 12 tháng`,
+    F16T18: `"Tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 2
+        - Liều 3: 5 tháng sau liều 2"`,
+    F19T26: `"Tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 2
+        - Liều 3: 5 tháng sau liều 2"`,
+    F27T45: `"Tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 2
+        - Liều 3: 5 tháng sau liều 2"`,
+    F46T55: `"Tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 2
+        - Liều 3: 5 tháng sau liều 2"`,
+    F56T64: `"Tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 2
+        - Liều 3: 5 tháng sau liều 2"`,
+    F65T: `"Tiêm 3 liều:
+    - Liều 1: lần đầu tiên tiêm
+      - Liều 2: 1 tháng sau liều 2
+        - Liều 3: 5 tháng sau liều 2"
+`,
+  },
+  {
+    name: `Bệnh lây lan qua đường tình dục và ung thư cổ tử cung do HPV`,
+    F9T11: 0,
+    F12T15: 0,
+    F16T18: `"Phác đồ 3 liều:
+    - Liều 1: lần đầu tiên
+      - Liều 2: cách liều 1 là 2 tháng
+        - Liều 3: cách liều 2 là 4 tháng"`,
+    F19T26: `"Phác đồ 3 liều:
+    - Liều 1: lần đầu tiên
+      - Liều 2: cách liều 1 là 2 tháng
+        - Liều 3: cách liều 2 là 4 tháng"`,
+    F27T45: `Khuyến cáo nếu có nguy cơ cao`,
+    F46T55: 0,
+    F56T64: 0,
+    F65T: 0,
+  },
+  {
+    name: `Tả`,
+    F9T11: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F12T15: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F16T18: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F19T26: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F27T45: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F46T55: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F56T64: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch`,
+    F65T: `Uống 2 liều cách nhau tối thiểu 2 tuần.Uống nhắc lại khi có dịch
+`,
+  },
+  {
+    name: `Thương hàn`,
+    F9T11: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F12T15: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F16T18: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F19T26: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F27T45: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F46T55: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F56T64: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ`,
+    F65T: `Tiêm 1 liều và nhắc lại mỗi 3 năm khi có nguy cơ
+`,
+  },
+  {
+    name: `Dại`,
+    F9T11: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F12T15: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F16T18: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F19T26: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F27T45: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F46T55: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F56T64: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)`,
+    F65T: `Phác đồ dự phòng trước phơi nhiễu gồm 3 liều(nếu người có nguy cơ, có thể tiêm các liều nhắc).Phác đồ dự phòng sau phơi nhiễm là 4 - 5 liều(nếu trước đó chưa tiêm)
+`,
+  },
+  {
+    name: `Sốt vàng`,
+    F9T11: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F12T15: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F16T18: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F19T26: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F27T45: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F46T55: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F56T64: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao`,
+    F65T: `Tiêm 1 liều khi đi du lịch đến những vùng có nguy cơ cao
+`,
+  },
+];
+
+export const childVaccineTime = [
+  {
+    name: `Lao`,
+    nb: true,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: 0,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Viêm gan B`,
+    nb: true,
+    nd: true,
+    rd: true,
+    th: true,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: true,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Bạch hầu, Ho gà, Uốn ván`,
+    nb: 0,
+    nd: true,
+    rd: true,
+    th: true,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: true,
+    yT: 0,
+    yRd: 0,
+    yN: true,
+    yB: 0
+  }, {
+    name: `Bại liệt`,
+    nb: 0,
+    nd: true,
+    rd: true,
+    th: true,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: true,
+    yT: 0,
+    yRd: 0,
+    yN: true,
+    yB: 0
+  }, {
+    name: `Viêm phổi, viêm màng não mủ do Hib`,
+    nb: 0,
+    nd: true,
+    rd: true,
+    th: true,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: true,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Tiêu chảy do Rotavirus`,
+    nb: 0,
+    nd: `Phác đồ 2 hoặc 3 liều, mỗi liều cách nhau tối thiểu 1 tháng`,
+    rd: `Phác đồ 2 hoặc 3 liều, mỗi liều cách nhau tối thiểu 1 tháng`,
+    th: `Phác đồ 2 hoặc 3 liều, mỗi liều cách nhau tối thiểu 1 tháng`,
+    thS: `Phác đồ 2 hoặc 3 liều, mỗi liều cách nhau tối thiểu 1 tháng`,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: 0,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Viêm phổi, viêm màng não, viêm tai giữa do phế cầu khuẩn`,
+    nb: 0,
+    nd: true,
+    rd: true,
+    th: true,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: true,
+    yO: 0,
+    yOH: 0,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Viêm màng não, nhiễm khuẩn huyết, viêm phổi do não mô cầu khuẩn B, C`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: true,
+    thB: 0,
+    thT: true,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: 0,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Cúm`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    thT: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    thC: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    thM: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    yO: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    yOH: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    yT: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    yRd: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    yN: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm.`,
+    yB: `Phác đồ tiêm 2 liều cách nhau tối thiểu 1 tháng cho lần tiêm đầu tiên. Tiêm nhắc lại 1 liều / năm`,
+  }, {
+    name: `Sởi`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: true,
+    thM: 0,
+    yO: 0,
+    yOH: 0,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Viêm màng não, nhiễm khuẩn huyết, viêm phổi do não mô cầu khuẩn A, C, W, Y`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: true,
+    thM: 0,
+    yO: true,
+    yOH: 0,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Vắc xin phòng viêm não Nhật Bản sống giảm độc lực tái tổ hợp`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: `Phác đồ 2 liều cách nhau 1 năm`,
+    thM: `Phác đồ 2 liều cách nhau 1 năm`,
+    yO: `Phác đồ 2 liều cách nhau 1 năm`,
+    yOH: `Phác đồ 2 liều cách nhau 1 năm`,
+    yT: `Phác đồ 2 liều cách nhau 1 năm`,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `"Vắc xin phòng viêm não Nhật Bản bất hoại
+"`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: `Phác đồ 3 liều tiêm và các liều nhắc lại`,
+    yOH: `Phác đồ 3 liều tiêm và các liều nhắc lại`,
+    yT: `Phác đồ 3 liều tiêm và các liều nhắc lại`,
+    yRd: `Phác đồ 3 liều tiêm và các liều nhắc lại`,
+    yN: `Phác đồ 3 liều tiêm và các liều nhắc lại`,
+    yB: `Phác đồ 3 liều tiêm và các liều nhắc lại`
+  }, {
+    name: `Sởi, Quai bị, Rubella`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: true,
+    thM: 0,
+    yO: true,
+    yOH: 0,
+    yT: 0,
+    yRd: true,
+    yN: true,
+    yB: 0
+  }, {
+    name: `Thủy đậu`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    thM: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    yO: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    yOH: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    yT: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    yRd: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    yN: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`,
+    yB: `Phác đồ 2 liều tiêm cách nhau tối thiểu 3 tháng`
+  }, {
+    name: `Viêm gan A`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: `Phác đồ 2 liều tiêm cách nhau tổi thiểu 6 tháng`,
+    yOH: `Phác đồ 2 liều tiêm cách nhau tổi thiểu 6 tháng`,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Viêm gan A+ B`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: `Phác đồ 2 liều tiêm cách nhau tổi thiểu 6 tháng`,
+    yOH: `Phác đồ 2 liều tiêm cách nhau tổi thiểu 6 tháng`,
+    yT: 0,
+    yRd: 0,
+    yN: 0,
+    yB: 0
+  }, {
+    name: `Thương hàn`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: 0,
+    yT: `1 liều, tiêm nhắc mỗi 3 năm`,
+    yRd: `2 liều, tiêm nhắc mỗi 3 năm`,
+    yN: `3 liều, tiêm nhắc mỗi 3 năm`,
+    yB: `4 liều, tiêm nhắc mỗi 3 năm`
+  }, {
+    name: `Bệnh Tả`,
+    nb: 0,
+    nd: 0,
+    rd: 0,
+    th: 0,
+    thS: 0,
+    thB: 0,
+    thT: 0,
+    thC: 0,
+    thM: 0,
+    yO: 0,
+    yOH: 0,
+    yT: `Uống 2 liều cách nhau tối thiểu 2 tuần`,
+    yRd: `Uống 2 liều cách nhau tối thiểu 2 tuần`,
+    yN: `Uống 2 liều cách nhau tối thiểu 2 tuần`,
+    yB: `Uống 2 liều cách nhau tối thiểu 2 tuần`
+  }
 ]

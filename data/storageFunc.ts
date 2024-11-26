@@ -107,9 +107,23 @@ export const saveStorageItem = async <K extends keyof FORMATDATA.StorageItem>(ke
   }
 }
 
-export const getStorageList = async <K extends keyof FORMATDATA.StorageItem>(key: K): Promise<FORMATDATA.StorageItem[K][] | false> => {
+export const saveStorageItemToList = async <K extends keyof FORMATDATA.StorageItem>(key: K, item: FORMATDATA.StorageItem[K] extends Array<infer U> ? U : FORMATDATA.StorageItem[K], id?: string): Promise<boolean> => {
   try {
-    const ret: FORMATDATA.StorageItem[K][] = await storage.getAllDataForKey(key);
+    await storage.save({
+      key,
+      data: item,
+      id,
+    });
+    return true;
+  } catch (error) {
+    console.log(`Failed to save ${key}:`, error);
+    return false;
+  }
+}
+
+export const getStorageList = async <K extends keyof FORMATDATA.StorageItem>(key: K): Promise<FORMATDATA.StorageItem[K] | false> => {
+  try {
+    const ret = await storage.getAllDataForKey(key) as FORMATDATA.StorageItem[K];
     return ret;
   } catch (error) {
     console.log(`Failed to get ${key} list:`, error);
