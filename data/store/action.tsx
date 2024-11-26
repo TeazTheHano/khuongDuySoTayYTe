@@ -1,6 +1,6 @@
 //FIXME: NEED CHANGE IN NEW PJ: Add action types and action creators here
 
-import { StorageItem, UserFormat } from "../interfaceFormat";
+import { StorageItem, UserFormat, VaccineShot } from "../interfaceFormat";
 
 // export const EXAMPLE = `EXAMPLE`;
 // export const examplefnc = (item: any) => {
@@ -18,18 +18,42 @@ export const currentSetUser = (user: UserFormat) => {
     }
 }
 
-export const SET_LOCATION = `SET_LOCATION`;
-export const currentSetLocation = (location: StorageItem['location']) => {
+export const SAVE_PROFILE = `SAVE_PROFILE`;
+export const saveProfile = (profile: UserFormat) => {
     return {
-        type: SET_LOCATION,
-        payload: location
+        type: SAVE_PROFILE,
+        payload: profile
     }
 }
 
-export const SET_CURRETN_WEATHER = `SET_CURRETN_WEATHER`;
-export const currentSetCurrentWeather = (currentWeather: any) => {
+export const REMOVE_PROFILE = `REMOVE_PROFILE`;
+export const removeProfile = (profileName: string) => {
     return {
-        type: SET_CURRETN_WEATHER,
-        payload: currentWeather
+        type: REMOVE_PROFILE,
+        payload: profileName
+    }
+}
+
+export const SAVE_NEW_VACCINE_SHOT = `SAVE_NEW_VACCINE_SHOT`;
+export const saveNewVaccineShot = (vaccineShot: VaccineShot) => {
+    return {
+        type: SAVE_NEW_VACCINE_SHOT,
+        payload: vaccineShot
+    }
+}
+
+export const REMOVE_VACCINE_SHOT = `REMOVE_VACCINE_SHOT`;
+export const removeVaccineShot = (vaccineShot: VaccineShot) => {
+    return {
+        type: REMOVE_VACCINE_SHOT,
+        payload: vaccineShot
+    }
+}
+
+export const ADD_VACCINE_SHOT = `ADD_VACCINE_SHOT`;
+export const addVaccineShot = (vaccineName: string, time: Date, place: string) => {
+    return {
+        type: ADD_VACCINE_SHOT,
+        payload: { vaccineName, time, place }
     }
 }

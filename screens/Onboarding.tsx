@@ -99,12 +99,12 @@ export default function Onboarding() {
 
 
   return (
-    <SSBar bgColor={'black'} barColor='#6B6DAB' barContentStyle='dark-content' >
+    <View style={[styles.flex1, styles.bgcolorBlack]}>
       <ViewRowCenter style={[styles.h50, styles.w100, { backgroundColor: '#6B6DAB' }]}>
         {step < 4 ?
           <TouchableOpacity
             onPress={() => setStep(onboard.length)}
-            style={[styles.positionAbsolute, styles.zIndex1, styles.borderRadius10, styles.padding10, { backgroundColor: NGHIACOLOR.NghiaTransparentDark30, top: vw(15), right: vw(10) }]}
+            style={[styles.positionAbsolute, styles.zIndex1, styles.borderRadius10, styles.padding10, { backgroundColor: NGHIACOLOR.NghiaTransparentDark30, top: vw(4), right: vw(8) }]}
           ><Nunito14Reg color='white'>Skip</Nunito14Reg></TouchableOpacity>
           : null}
         {onboard[step]?.animation ? <Animated.View
@@ -149,6 +149,6 @@ export default function Onboarding() {
           </TouchableOpacity>
         </ViewRowBetweenCenter>
       </ViewColBetweenCenter>
-    </SSBar>
+    </View>
   )
 }

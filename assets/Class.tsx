@@ -888,7 +888,7 @@ export class InputCardVer1 extends Component<{
                     onChangeText={onChangeText}
                     autoCapitalize={autoCapitalize ? autoCapitalize : 'none'}
                     placeholder={placeholder ? placeholder : ''}
-                    placeholderTextColor={placeholderColor ? placeholderColor : clrStyle.grey2}
+                    placeholderTextColor={placeholderColor ? placeholderColor : clrStyle.basegrey100}
                     secureTextEntry={hideContent ? hideContent : false}
                     passwordRules={type === 'password' ? "minlength: 8; maxlength: 100" : ''}
                     textContentType={type as "none"}
@@ -905,9 +905,28 @@ export class InputCardVer1 extends Component<{
                     <TouchableOpacity
                         onPress={() => { hideContentFnc && hideContentFnc(!hideContent) }}
                         style={[{ paddingRight: vw(2) }]}>
-                        {hideContent ? SVG.inVisibilityIcon(vw(6), vw(6)) : visibilityIcon(vw(6), vw(6))}
+                        {hideContent ? SVG.inVisibilityIcon(vw(6), vw(6)) : SVG.visibilityIcon(vw(6), vw(6))}
                     </TouchableOpacity>
                     : null}
+            </View>
+        )
+    }
+}
+
+export class TitleAndMoreBtn extends Component<{
+    title: string
+    onPress: () => void
+    customStyle?: any
+}> {
+    render() {
+        const { title, onPress, customStyle } = this.props;
+        return (
+            <View style={[styles.flexRow, styles.justifyContentSpaceBetween, styles.marginVertical1vw, customStyle]}>
+                <CTEXT.Nunito18Bold>{title}</CTEXT.Nunito18Bold>
+                <TouchableOpacity onPress={onPress} style={[styles.flexRow, styles.alignItemsCenter]}>
+                    <CTEXT.Nunito14Reg>Xem thêm</CTEXT.Nunito14Reg>
+                    {SVG.sharpRightArrow(vw(4), vw(4), clrStyle.black)}
+                </TouchableOpacity>
             </View>
         )
     }

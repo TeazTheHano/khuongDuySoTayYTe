@@ -27,16 +27,64 @@ export default function setReducer(state = initialState, action: Action): Curren
                 user: action.payload as FormatData.UserFormat
             };
         }
-        case TYPE.SET_LOCATION: {
+        case TYPE.SAVE_PROFILE: {
             return {
                 ...state,
-                location: action.payload as unknown as FormatData.StorageItem['location']
+                profile: state.profile.some((p) => p.email === (action.payload as FormatData.UserFormat).email)
+                    ? state.profile.map((p) =>
+                        p.email === (action.payload as FormatData.UserFormat).email ? (action.payload as FormatData.UserFormat) : p
+                    )
+                    : [...state.profile, action.payload as FormatData.UserFormat]
             };
         }
-        case TYPE.SET_CURRETN_WEATHER: {
+        case TYPE.REMOVE_PROFILE: {
             return {
                 ...state,
-                currentWeather: action.payload
+                profile: state.profile.filter((p) => p.email !== action.payload)
+            };
+        }
+        case TYPE.ADD_VACCINE_SHOT: {
+            return {
+                ...state,
+                user: {
+                    ...state.user,
+                    vaccineShots: state.user.vaccineShots.map((v) => {
+                        if (v.name === action.payload.name) {
+                            return {
+                                ...v,
+                                detail: [...v.detail, { time: action.payload.time, place: action.payload.place }]
+                            };
+                        }
+                        return v;
+                    })
+                }
+            };
+        }
+        case TYPE.REMOVE_VACCINE_SHOT: {
+            return {
+                ...state,
+                user: {
+                    ...state.user,
+                    vaccineShots: state.user.vaccineShots.filter((v) => v.name !== action.payload)
+                }
+            };
+        }
+        case TYPE.SAVE_NEW_VACCINE_SHOT: {
+            return {
+                ...state,
+                user: {
+                    ...state.user,
+                    vaccineShots: state.user.vaccineShots.some((v) => v.name === (action.payload as FormatData.VaccineShot).name)
+                        ? state.user.vaccineShots.map((v) =>
+                            v.name === (action.payload as FormatData.VaccineShot).name
+                                ? {
+                                    ...v,
+                                    detail: [...v.detail, (action.payload as FormatData.VaccineShot).detail[0]]
+                                }
+                                : v
+                        )
+                        : [...state.user.vaccineShots, action.payload]
+                }
             };
         }
         default:

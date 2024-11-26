@@ -14,8 +14,7 @@ import { StorageItem, UserFormat } from "../interfaceFormat";
 
 export interface CurrentCache {
     user: UserFormat;
-    location: StorageItem['location'];
-    currentWeather: any
+    profile: UserFormat[];
 }
 
 export interface Action {
@@ -28,18 +27,9 @@ export const initialState: CurrentCache = {
         synced: false,
         name: '',
         age: 0,
-        loginMethod: '',
         email: '',
-        dataCollect: false,
-        data: {
-            interest: [],
-            favorite: [],
-            job: '',
-        }
+        address: '',
+        vaccineShots: []
     },
-    location: {
-        lat: 0,
-        lng: 0
-    },
-    currentWeather: {}
+    profile: []
 };
