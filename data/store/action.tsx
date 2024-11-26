@@ -19,9 +19,17 @@ export const currentSetUser = (user: UserFormat) => {
 }
 
 export const SAVE_PROFILE = `SAVE_PROFILE`;
-export const saveProfile = (profile: UserFormat) => {
+export const saveProfile = (profile: UserFormat | UserFormat[]) => {
     return {
         type: SAVE_PROFILE,
+        payload: profile
+    }
+}
+
+export const ADD_TO_PROFILE = `ADD_TO_PROFILE`;
+export const addToProfile = (profile: UserFormat) => {
+    return {
+        type: ADD_TO_PROFILE,
         payload: profile
     }
 }

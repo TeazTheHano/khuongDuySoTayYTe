@@ -402,8 +402,17 @@ export const demoUser: UserFormat[] = [
           { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
           { time: new Date('2022-03-01'), place: 'Hai Chau, Da Nang' },
         ],
-        nextShot: new Date('2022-04-01'),
+        nextShot: new Date('2022-04-01T09:00:00'),
       },
+      {
+        name: 'Moderna',
+        detail: [
+          { time: new Date('2022-01-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-03-01'), place: 'Hai Chau, Da Nang' },
+        ],
+        nextShot: new Date('2022-09-06'),
+      }
     ],
   },
   {
@@ -415,6 +424,28 @@ export const demoUser: UserFormat[] = [
         detail: [
           { time: new Date('2022-01-01'), place: 'Hai Chau, Da Nang' },
           { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
+        ],
+      },
+      {
+        name: 'Moderna2',
+        detail: [
+          { time: new Date('2022-01-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
+        ],
+        nextShot: new Date('2022-02-01'),
+      }
+    ],
+  },
+  {
+    name: 'Nguyen Van C',
+    address: 'Hai Chau, Da Nang',
+    vaccineShots: [
+      {
+        name: 'Pentaxim',
+        detail: [
+          { time: new Date('2022-01-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-02-01'), place: 'Hai Chau, Da Nang' },
+          { time: new Date('2022-03-01'), place: 'Hai Chau, Da Nang' },
         ],
       },
     ],

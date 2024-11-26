@@ -30,12 +30,8 @@ export default function setReducer(state = initialState, action: Action): Curren
         case TYPE.SAVE_PROFILE: {
             return {
                 ...state,
-                profile: state.profile.some((p) => p.email === (action.payload as FormatData.UserFormat).email)
-                    ? state.profile.map((p) =>
-                        p.email === (action.payload as FormatData.UserFormat).email ? (action.payload as FormatData.UserFormat) : p
-                    )
-                    : [...state.profile, action.payload as FormatData.UserFormat]
-            };
+                profile: Array.isArray(action.payload) ? action.payload : [action.payload]
+            }
         }
         case TYPE.REMOVE_PROFILE: {
             return {

@@ -10,6 +10,7 @@ export interface UserFormat {
     email?: string;
     address?: string;
     vaccineShots: VaccineShot[];
+    avataAddress?: string;
 }
 
 export interface VaccineShot {

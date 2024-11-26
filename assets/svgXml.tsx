@@ -187,6 +187,15 @@ export const visibilityIcon = (w?: any, h?: any, color?: any) => {
     );
 }
 
+export const calender = (w: any = '100%', h: any = '100%', color?:any) => {
+    const xml = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M13.3333 12.6667V14.0729L14.0833 14.9167M12.5 2.08334V5.41668M7.50001 2.08334V5.41668M7.50001 9.58334H2.93112M2.93112 9.58334C2.92136 9.85071 2.91667 10.1284 2.91667 10.4167C2.91667 14.5079 3.86745 16.4598 6.66667 17.1701M2.93112 9.58334C3.10467 4.82732 4.87163 3.33334 10 3.33334C14.4733 3.33334 16.389 4.47 16.9207 7.91668M17.0833 14.1667C17.0833 16.2377 15.4044 17.9167 13.3333 17.9167C11.2623 17.9167 9.58334 16.2377 9.58334 14.1667C9.58334 12.0956 11.2623 10.4167 13.3333 10.4167C15.4044 10.4167 17.0833 12.0956 17.0833 14.1667Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`
+    return (
+        <SvgXml xml={xml} width={w} height={h} />
+    )
+}
+
 // export const NAME = (w: any = '100%', h: any = '100%', color?:any) => {
 //     const xml = ``
 //     return (

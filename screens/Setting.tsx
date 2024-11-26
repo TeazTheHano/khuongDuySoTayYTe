@@ -1,10 +1,14 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { SSBarWithSaveArea } from '../assets/Class'
+import { clearStorage } from '../data/storageFunc';
 
 export default function Setting() {
   return (
-    <View>
-      <Text>Setting</Text>
-    </View>
+    <SSBarWithSaveArea>
+      <TouchableOpacity onPress={() => {console.log('remove profile'); clearStorage('profile')}}>
+        <Text>Remove Profile[]</Text>
+      </TouchableOpacity>
+    </SSBarWithSaveArea>
   )
 }
