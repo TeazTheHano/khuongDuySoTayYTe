@@ -905,7 +905,7 @@ export class InputCardVer1 extends Component<{
                     <TouchableOpacity
                         onPress={() => { hideContentFnc && hideContentFnc(!hideContent) }}
                         style={[{ paddingRight: vw(2) }]}>
-                        {hideContent ? inVisibilityIcon(vw(6), vw(6)) : visibilityIcon(vw(6), vw(6))}
+                        {hideContent ? SVG.inVisibilityIcon(vw(6), vw(6)) : visibilityIcon(vw(6), vw(6))}
                     </TouchableOpacity>
                     : null}
             </View>
