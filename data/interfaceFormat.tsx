@@ -11,7 +11,7 @@ export interface UserFormat {
     address?: string;
     vaccineShots: VaccineShot[];
     avataAddress?: string;
-    moreInfo?: { rela?: string, age?: number }
+    moreInfo?: { rela?: string }
     dob?: Date;
     tel?: string;
     birthCertAdd?: string;

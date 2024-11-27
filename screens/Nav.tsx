@@ -68,7 +68,7 @@ export default function Shop() {
                 style={[styles.h100]}
                 contentContainerStyle={[styles.gap4vw]}
                 data={existProfile}
-                renderItem={({ item }) => <ProfileRender item={item} moreInfo={{ rela: item.moreInfo?.rela, age: item.moreInfo?.age }} />}
+                renderItem={({ item }) => <ProfileRender item={item} moreInfo={{ rela: item.moreInfo?.rela, age: item?.age }} />}
                 keyExtractor={item => item.name}
                 extraData={existProfile}
               />
@@ -77,7 +77,7 @@ export default function Shop() {
           }
         </ViewCol>
       </View>
-      <RoundBtn title='Thêm hồ sơ mới' onPress={() => { }} textClass={CTEXT.Nunito16Reg} textColor='white' bgColor='#6B6DAB' customStyle={[styles.justifyContentCenter, styles.borderRadius100, styles.w90, styles.alignSelfCenter, styles.marginBottom4vw]} />
+      <RoundBtn title='Thêm hồ sơ mới' onPress={() => { navigation.navigate('AddProfile' as never) }} textClass={CTEXT.Nunito16Reg} textColor='white' bgColor='#6B6DAB' customStyle={[styles.justifyContentCenter, styles.borderRadius100, styles.w90, styles.alignSelfCenter, styles.marginBottom4vw]} />
 
       {selectedProfile ?
         <Pressable style={[styles.positionAbsolute, styles.w100, styles.h100vh, styles.bottom0, { backgroundColor: 'rgba(0,0,0,0.8)', zIndex: 1 }]}

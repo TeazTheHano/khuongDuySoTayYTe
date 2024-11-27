@@ -370,111 +370,111 @@ export const showInDeverlopFnc = () => {
 
 
 // img picker and camera.
-// require >>>> react-native-image-picker <<<< package
-// import { CameraOptions, launchCamera, launchImageLibrary } from 'react-native-image-picker';
+//     require >>>> react - native - image - picker <<<< package
+import { CameraOptions, launchCamera, launchImageLibrary } from 'react-native-image-picker';
 
-// const defaultCameraOptions: CameraOptions = {
-//     mediaType: 'photo',
-//     quality: 1,
-// };
+const defaultCameraOptions: CameraOptions = {
+    mediaType: 'photo',
+    quality: 1,
+};
 
-// export const requestCameraPermission = async () => {
-//     if (Platform.OS === 'android') {
-//         try {
-//             const granted = await PermissionsAndroid.request(
-//                 PermissionsAndroid.PERMISSIONS.CAMERA,
-//                 {
-//                     title: 'Camera Permission',
-//                     message: 'This app needs camera access to take pictures',
-//                     buttonNeutral: 'Ask Me Later',
-//                     buttonNegative: 'Cancel',
-//                     buttonPositive: 'OK',
-//                 },
-//             );
-//             console.log('Camera permission:', granted);
+export const requestCameraPermission = async () => {
+    if (Platform.OS === 'android') {
+        try {
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.CAMERA,
+                {
+                    title: 'Camera Permission',
+                    message: 'This app needs camera access to take pictures',
+                    buttonNeutral: 'Ask Me Later',
+                    buttonNegative: 'Cancel',
+                    buttonPositive: 'OK',
+                },
+            );
+            console.log('Camera permission:', granted);
 
-//             return granted === PermissionsAndroid.RESULTS.GRANTED;
-//         } catch (err) {
-//             console.warn(err);
-//             return false;
-//         }
-//     } else {
-//         return true;
-//     }
-// };
+            return granted === PermissionsAndroid.RESULTS.GRANTED;
+        } catch (err) {
+            console.warn(err);
+            return false;
+        }
+    } else {
+        return true;
+    }
+};
 
-// export const requestGalleryPermission = async () => {
-//     if (Platform.OS === 'android') {
-//         try {
-//             const granted = await PermissionsAndroid.request(
-//                 PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
-//                 {
-//                     title: 'Gallery Permission',
-//                     message: 'This app needs gallery access to take pictures',
-//                     buttonNeutral: 'Ask Me Later',
-//                     buttonNegative: 'Cancel',
-//                     buttonPositive: 'OK',
-//                 },
-//             );
-//             return granted === PermissionsAndroid.RESULTS.GRANTED;
-//         } catch (err) {
-//             console.warn(err);
-//             return false;
-//         }
-//     } else {
-//         return true;
-//     }
-// }
+export const requestGalleryPermission = async () => {
+    if (Platform.OS === 'android') {
+        try {
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+                {
+                    title: 'Gallery Permission',
+                    message: 'This app needs gallery access to take pictures',
+                    buttonNeutral: 'Ask Me Later',
+                    buttonNegative: 'Cancel',
+                    buttonPositive: 'OK',
+                },
+            );
+            return granted === PermissionsAndroid.RESULTS.GRANTED;
+        } catch (err) {
+            console.warn(err);
+            return false;
+        }
+    } else {
+        return true;
+    }
+}
 
-// export const openCamera = async (saveImgFnc: (item: any) => void, options = defaultCameraOptions) => {
-//     const hasPermission = await requestCameraPermission();
-//     if (!hasPermission) {
-//         console.log('Camera permission denied');
-//         return;
-//     }
+export const openCamera = async (saveImgFnc: (item: any) => void, options = defaultCameraOptions) => {
+    const hasPermission = await requestCameraPermission();
+    if (!hasPermission) {
+        console.log('Camera permission denied');
+        return;
+    }
 
-//     try {
-//         launchCamera(options, (response: any) => {
-//             console.log('Response = ', response);
+    try {
+        launchCamera(options, (response: any) => {
+            console.log('Response = ', response);
 
-//             if (response.didCancel) {
-//                 console.log('User cancelled image picker');
-//             } else if (response.errorCode) {
-//                 console.log('ImagePicker Error: ', response.errorMessage);
-//                 Alert.alert('Error', response.errorMessage || response.errorCode);
-//             } else if (response.assets && response.assets.length > 0) {
-//                 saveImgFnc(response.assets[0].uri);
-//             }
-//         });
-//     } catch (error) {
-//         console.error('Error launching camera:', error);
-//         Alert.alert('Error', 'An unexpected error occurred while launching the camera.');
-//     }
-// };
+            if (response.didCancel) {
+                console.log('User cancelled image picker');
+            } else if (response.errorCode) {
+                console.log('ImagePicker Error: ', response.errorMessage);
+                Alert.alert('Error', response.errorMessage || response.errorCode);
+            } else if (response.assets && response.assets.length > 0) {
+                saveImgFnc(response.assets[0].uri);
+            }
+        });
+    } catch (error) {
+        console.error('Error launching camera:', error);
+        Alert.alert('Error', 'An unexpected error occurred while launching the camera.');
+    }
+};
 
-// export const openGallery = async (saveImgFnc: (item: any) => void, options = defaultCameraOptions) => {
-//     // const hasPermission = await requestGalleryPermission();
-//     // if (!hasPermission) {
-//     //     console.log('Gallery permission denied');
-//     //     return;
-//     // }
+export const openGallery = async (saveImgFnc: (item: any) => void, options = defaultCameraOptions) => {
+    // const hasPermission = await requestGalleryPermission();
+    // if (!hasPermission) {
+    //     console.log('Gallery permission denied');
+    //     return;
+    // }
 
-//     try {
-//         launchImageLibrary(options, (response: any) => {
-//             console.log('Response = ', response);
+    try {
+        launchImageLibrary(options, (response: any) => {
+            console.log('Response = ', response);
 
-//             if (response.didCancel) {
-//                 console.log('User cancelled image picker');
-//             } else if (response.errorCode) {
-//                 console.log('ImagePicker Error: ', response.errorMessage);
-//                 Alert.alert('Error', response.errorMessage || response.errorCode);
-//             } else if (response.assets && response.assets.length > 0) {
-//                 saveImgFnc(response.assets[0].uri);
-//             }
-//         });
-//     } catch (error) {
-//         console.error('Error launching image library:', error);
-//         Alert.alert('Error', 'An unexpected error occurred while launching the image library.');
-//     }
-// }
+            if (response.didCancel) {
+                console.log('User cancelled image picker');
+            } else if (response.errorCode) {
+                console.log('ImagePicker Error: ', response.errorMessage);
+                Alert.alert('Error', response.errorMessage || response.errorCode);
+            } else if (response.assets && response.assets.length > 0) {
+                saveImgFnc(response.assets[0].uri);
+            }
+        });
+    } catch (error) {
+        console.error('Error launching image library:', error);
+        Alert.alert('Error', 'An unexpected error occurred while launching the image library.');
+    }
+}
 // END OF UNIVERSE FUNCTION________________________________________
