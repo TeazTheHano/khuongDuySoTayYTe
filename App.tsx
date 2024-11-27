@@ -21,6 +21,8 @@ import Community from './screens/Map';
 import ListView from './screens/ListView';
 import Setting from './screens/Setting';
 // >>>>>>>>>>
+import AddProfile from './screens/AddProfile';
+import ViewProfile from './screens/ViewProfile';
 
 
 // ____________________END OF IMPORT_______________________
@@ -45,6 +47,8 @@ function App(): React.JSX.Element {
 
           {/* >>>> */}
           <Stack.Screen name="ListView" component={ListView} />
+          <Stack.Screen name="AddProfile" component={AddProfile} />
+          <Stack.Screen name="ViewProfile" component={ViewProfile} />
         </Stack.Navigator>
       </NavigationContainer>
     </ProviderTotal>

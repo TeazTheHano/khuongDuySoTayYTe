@@ -11,6 +11,12 @@ export interface UserFormat {
     address?: string;
     vaccineShots: VaccineShot[];
     avataAddress?: string;
+    moreInfo?: { rela?: string, age?: number }
+    dob?: Date;
+    tel?: string;
+    birthCertAdd?: string;
+    sex?: Boolean;
+    idNumber?: string;
 }
 
 export interface VaccineShot {

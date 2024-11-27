@@ -8,12 +8,15 @@ import { useNavigation } from '@react-navigation/native'
 import { Nunito14Reg, Nunito18Med, SVNHara } from '../assets/CustomText'
 import { NGHIACOLOR, NGHIASTYLE } from '../assets/componentStyleSheet'
 import { SvgXml } from 'react-native-svg'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import { currentSetUser, RootContext } from '../data/store'
 
 export default function Onboarding() {
   const navigation = useNavigation();
+  const [CurrentCache, dispatch] = React.useContext(RootContext);
   useEffect(() => {
     getUser().then((res) => {
-      if (res && res.name) navigation.navigate('BottomTab' as never);
+      if (res && res.name) { dispatch(currentSetUser(res)); navigation.navigate('BottomTab' as never); }
     })
   }, [])
 
@@ -97,14 +100,14 @@ export default function Onboarding() {
   }, [step]);
 
 
-
+  const insets = useSafeAreaInsets();
   return (
     <View style={[styles.flex1, styles.bgcolorBlack]}>
       <ViewRowCenter style={[styles.h50, styles.w100, { backgroundColor: '#6B6DAB' }]}>
         {step < 4 ?
           <TouchableOpacity
             onPress={() => setStep(onboard.length)}
-            style={[styles.positionAbsolute, styles.zIndex1, styles.borderRadius10, styles.padding10, { backgroundColor: NGHIACOLOR.NghiaTransparentDark30, top: vw(4), right: vw(8) }]}
+            style={[styles.positionAbsolute, styles.zIndex1, styles.borderRadius10, styles.padding10, { backgroundColor: NGHIACOLOR.NghiaTransparentDark30, top: insets.top || vw(4), right: vw(8) }]}
           ><Nunito14Reg color='white'>Skip</Nunito14Reg></TouchableOpacity>
           : null}
         {onboard[step]?.animation ? <Animated.View

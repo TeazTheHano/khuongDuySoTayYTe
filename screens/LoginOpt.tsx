@@ -20,7 +20,7 @@ export default function LoginOpt() {
                     console.log(20, Platform.OS, res);
                     dispatch(currentSetUser(res));
                     if (res.synced) {
-                        if (res.dataCollect) {
+                        if (res.name) {
                             navigation.navigate('BottomTab' as never);
                         } else {
                             navigation.navigate('DataCollect' as never);

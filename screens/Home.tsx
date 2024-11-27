@@ -2,10 +2,10 @@ import { View, Text, Image, ImageStyle, ScrollView, TouchableOpacity, FlatList }
 import React, { useEffect } from 'react'
 import { SSBarWithSaveArea, TitleAndMoreBtn, ViewCol, ViewRow, ViewRowBetweenCenter, ViewRowStartCenter } from '../assets/Class'
 import styles, { vw } from '../assets/stylesheet'
-import { getStorageList, saveStorageItem, saveStorageItemToList } from '../data/storageFunc'
+import { getStorageItem, getStorageList, saveStorageItem, saveStorageItemToList } from '../data/storageFunc'
 import { demoUser, nearHospital } from '../data/factoryData'
 import { UserFormat } from '../data/interfaceFormat'
-import { RootContext, saveProfile } from '../data/store'
+import { currentSetUser, RootContext, CURRENTsaveProfile } from '../data/store'
 import { useNavigation } from '@react-navigation/native'
 import * as CTEXT from '../assets/CustomText'
 import * as SVG from '../assets/svgXml'
@@ -20,7 +20,6 @@ export default function Home() {
     (async () => {
       try {
         let res = await getStorageList('profile');
-        console.log('Home.tsx', 12, res);
 
         if (!res || res.length === 0) {
           console.log('No Profile data, loading Demo data');
@@ -32,8 +31,9 @@ export default function Home() {
         }
 
         if (res && res.length > 0) {
-          dispatch(saveProfile(res));
+          dispatch(CURRENTsaveProfile(res));
         }
+
       } catch (error) {
         console.error('Error in fetching or saving profile data:', error);
       }

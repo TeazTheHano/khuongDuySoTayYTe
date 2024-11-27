@@ -83,6 +83,12 @@ export default function setReducer(state = initialState, action: Action): Curren
                 }
             };
         }
+        case TYPE.SET_SELECTED_PROFILE: {
+            return {
+                ...state,
+                selectedProfile: action.payload
+            }
+        }
         default:
             return state;
     }

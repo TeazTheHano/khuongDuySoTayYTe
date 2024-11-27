@@ -12,6 +12,7 @@ import { appleIcon, googleColorIcon, inVisibilityIcon } from '../assets/svgXml'
 
 import { currentSetUser, RootContext } from '../data/store'
 import { Nunito14Reg, Nunito16Bold, Nunito18Reg, Nunito24Bold } from '../assets/CustomText'
+import { UserFormat } from '../data/interfaceFormat'
 
 export default function Login() {
     const navigation = useNavigation()
@@ -53,10 +54,9 @@ export default function Login() {
             return Alert.alert('Email không hợp lệ')
         }
         try {
-            // TODO: firebase auth
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
-                    let user = auth.currentUser;
+                    let user = userCredential.user;
                     if (user) {
                         updateProfile(user, {
                             displayName: userName,
@@ -71,16 +71,15 @@ export default function Login() {
                     }
                 })
                 .then(() => {
-                    let user = {
+                    let user: UserFormat = {
                         email: email,
                         name: userName,
-                        password: password,
-                        imgAddress: avtURL
+                        avataAddress: avtURL,
+                        vaccineShots: []
                     }
                     saveUser(user)
                     dispatch(currentSetUser(user));
-                })
-                .then(() => {
+                }).then(() => {
                     return navigation.navigate('BottomTab' as never)
                 })
 
@@ -102,11 +101,11 @@ export default function Login() {
                     const user = userCredential;
 
                     if (user.user.email) {
-                        let userObj = {
+                        let userObj: UserFormat = {
                             email: user.user.email,
                             name: user.user.displayName ? user.user.displayName : user.user.email,
-                            password: password,
-                            imgAddress: user.user.photoURL ? user.user.photoURL : ''
+                            avataAddress: user.user.photoURL ? user.user.photoURL : '',
+                            vaccineShots: []
                         }
                         saveUser(userObj)
                         dispatch(currentSetUser(userObj));

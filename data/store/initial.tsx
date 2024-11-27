@@ -15,6 +15,7 @@ import { StorageItem, UserFormat } from "../interfaceFormat";
 export interface CurrentCache {
     user: UserFormat;
     profile: UserFormat[];
+    selectedProfile: null | UserFormat;
 }
 
 export interface Action {
@@ -31,5 +32,6 @@ export const initialState: CurrentCache = {
         address: '',
         vaccineShots: []
     },
-    profile: []
+    profile: [],
+    selectedProfile: null
 };

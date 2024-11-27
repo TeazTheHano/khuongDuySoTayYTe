@@ -1,6 +1,6 @@
 // system import
 import React, { Component, ComponentType, useState } from 'react';
-import { ImageBackground, Platform, SafeAreaView, StatusBar, Text, TextInput, TouchableOpacity, View, Image, ImageStyle, StatusBarStyle, ReturnKeyType, KeyboardType, FlatList, TextInputProps, Animated, Easing, TouchableOpacityProps, ViewProps, ViewStyle } from 'react-native';
+import { ImageBackground, Platform, SafeAreaView, StatusBar, Text, TextInput, TouchableOpacity, View, Image, ImageStyle, StatusBarStyle, ReturnKeyType, KeyboardType, FlatList, TextInputProps, Animated, Easing, TouchableOpacityProps, ViewProps, ViewStyle, FlexStyle } from 'react-native';
 
 // style import
 import styles from './stylesheet';
@@ -74,7 +74,7 @@ export class SaveViewWithColorStatusBar extends Component<{ children?: React.Rea
     }
 }
 
-export class ViewRow extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewRow extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexRow, this.props.style]}>
@@ -84,7 +84,7 @@ export class ViewRow extends Component<{ children?: React.ReactNode, style?: Vie
     }
 }
 
-export class ViewCol extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewCol extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexCol, this.props.style]}>
@@ -94,7 +94,7 @@ export class ViewCol extends Component<{ children?: React.ReactNode, style?: Vie
     }
 }
 
-export class ViewRowCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewRowCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexRowCenter, this.props.style]}>
@@ -104,7 +104,7 @@ export class ViewRowCenter extends Component<{ children?: React.ReactNode, style
     }
 }
 
-export class ViewColCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewColCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexColCenter, this.props.style]}>
@@ -114,7 +114,7 @@ export class ViewColCenter extends Component<{ children?: React.ReactNode, style
     }
 }
 
-export class ViewRowBetweenCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewRowBetweenCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexRowBetweenCenter, this.props.style]}>
@@ -124,7 +124,7 @@ export class ViewRowBetweenCenter extends Component<{ children?: React.ReactNode
     }
 }
 
-export class ViewColBetweenCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewColBetweenCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexColBetweenCenter, this.props.style]}>
@@ -134,7 +134,7 @@ export class ViewColBetweenCenter extends Component<{ children?: React.ReactNode
     }
 }
 
-export class ViewRowEvenlyCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewRowEvenlyCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexRowEvenlyCenter, this.props.style]}>
@@ -144,7 +144,7 @@ export class ViewRowEvenlyCenter extends Component<{ children?: React.ReactNode,
     }
 }
 
-export class ViewColEvenlyCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewColEvenlyCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexColEvenlyCenter, this.props.style]}>
@@ -154,7 +154,7 @@ export class ViewColEvenlyCenter extends Component<{ children?: React.ReactNode,
     }
 }
 
-export class ViewColEndCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewColEndCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexColEndCenter, this.props.style]}>
@@ -164,7 +164,7 @@ export class ViewColEndCenter extends Component<{ children?: React.ReactNode, st
     }
 }
 
-export class ViewRowStartCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewRowStartCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexRowStartCenter, this.props.style]}>
@@ -174,7 +174,7 @@ export class ViewRowStartCenter extends Component<{ children?: React.ReactNode, 
     }
 }
 
-export class ViewColStartCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewColStartCenter extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexColStartCenter, this.props.style]}>
@@ -184,7 +184,7 @@ export class ViewColStartCenter extends Component<{ children?: React.ReactNode, 
     }
 }
 
-export class ViewColStartBetween extends Component<{ children?: React.ReactNode, style?: ViewStyle | ImageStyle | any }> {
+export class ViewColStartBetween extends Component<{ children?: React.ReactNode, style?: ViewStyle[] | FlexStyle[] | any }> {
     render() {
         return (
             <View style={[styles.flexCol, styles.justifyContentSpaceBetween, this.props.style]}>

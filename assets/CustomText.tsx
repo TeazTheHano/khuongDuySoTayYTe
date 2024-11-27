@@ -372,3 +372,14 @@ export class SVNHara extends Component<{ children: React.ReactNode, style?: Text
         )
     }
 }
+
+export class Roboto24Black extends Component<{ children: React.ReactNode, style?: TextStyle | any, lineNumber?: number, color?: string }> {
+    render() {
+        const { color, children, style, lineNumber } = this.props;
+        return (
+            <Text numberOfLines={lineNumber} style={[{ fontFamily: 'Roboto-Black', color: this.props.color, fontSize: vw(6) }, style]}>
+                {children}
+            </Text>
+        )
+    }
+}
