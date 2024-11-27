@@ -917,15 +917,16 @@ export class TitleAndMoreBtn extends Component<{
     title: string
     onPress: () => void
     customStyle?: any
+    color?: string
 }> {
     render() {
         const { title, onPress, customStyle } = this.props;
         return (
             <View style={[styles.flexRow, styles.justifyContentSpaceBetween, styles.marginVertical1vw, customStyle]}>
-                <CTEXT.Nunito18Bold>{title}</CTEXT.Nunito18Bold>
+                <CTEXT.Nunito18Bold color={this.props.color}>{title}</CTEXT.Nunito18Bold>
                 <TouchableOpacity onPress={onPress} style={[styles.flexRow, styles.alignItemsCenter]}>
-                    <CTEXT.Nunito14Reg>Xem thêm</CTEXT.Nunito14Reg>
-                    {SVG.sharpRightArrow(vw(4), vw(4), clrStyle.black)}
+                    <CTEXT.Nunito14Reg color={this.props.color}>Xem thêm</CTEXT.Nunito14Reg>
+                    {SVG.sharpRightArrow(vw(4), vw(4), this.props.color)}
                 </TouchableOpacity>
             </View>
         )
